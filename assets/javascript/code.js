@@ -31,7 +31,7 @@
     $(document).on("click", ".pet-select", function() {
         $("#pet-images").empty();
         var petSelected = $(this).attr("data-name").replace(" ", "+").toLowerCase()
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + petSelected + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + petSelected + "&api_key=dc6zaTOxFJmzC&limit=10";
         console.log(petSelected)
         console.log(queryURL)
         var promise = $.ajax({
